@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Dimasha Fernando">
+        <title>Quiz Time!</title>
+        <link rel="stylesheet" href="css/Quiz.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script type="text/javascript" src="js/Quiz.js"></script>
+        <script type="text/javascript" src="js/General.js"></script>
+      </head>
+    <body>
+        <header> <!--Navigation AND Title--> 
+            <nav id=menu> <!--Navigation-->
+              <div class="topbar">
+                <div class="menu-logo">
+                  <a href="index.html">
+                      <img src="img/logo.png" alt="" height="90px">
+                  </a>
+                </div>
+                <div class="menu" id="topmenu"> <!--code taken from w3schools and then redesigned -->
+                  <h2 id="menu">
+                    <a href="index.html" class="menu">Home</a>
+                    <a href="index.html#aboutme" class="menu">About Me</a>
+                    <a class="active" href="Module.html" class="menu">What I'm Taking</a>
+                    <a href="Contact.html" class="menu">Contact</a>
+                    <a id="nav-toggle" href="#" onclick="menuFunction()">&#9776;</a>
+                    </a>
+                  </h2> 
+                </div>
+              </div> 
+            </nav>
+        </header>
+
+        <div class="menuseparation">
+          <img src="img/MenuSeparator.jpg" class="menuseparation">
+        </div>
+
+        <div class="container">
+          <p>This quiz is will not be taking record of your answers because I am in no mood to bring a database into this just yet. So just have fun :)</p>
+            <div class="quizsection">
+            <button onclick="startQuiz()" id="startQuiz">Start Quiz</button>
+            <div id="questions"></div> 
+            </div>
+        </div>
+        <div id="spaces"> <!-- This is just to drop the footer to the bottom of the page. Disappears after Start Quiz has been pressed-->
+        </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+        </div>
+        <footer class="footer"><!--Footer-->
+              <caption>HYPEGOD, Copyright &copy; - Dimasha Fernando 2020</caption>
+              <caption> <a href="Accessibility.html"> Accessibility </a></caption>
+        </footer>
+    </body>
+</html>

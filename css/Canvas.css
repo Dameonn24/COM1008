@@ -1,0 +1,17 @@
+.graphs{
+    text-align: center;
+}
+.buttons{
+    background-color: #008cff;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    width:20%;
+}
+
+.buttons:hover{
+    background-color: #008cff81;
+    cursor: pointer;
+}

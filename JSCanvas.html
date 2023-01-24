@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Dimasha Fernando">
+        <title>JavaScript and Cavas</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/Canvas.css">
+        <script type="text/javascript" src="js/General.js"></script>
+    </head>
+    <body>
+        <header> <!--Navigation AND Title--> 
+            <nav id=menu> <!--Navigation-->
+              <div class="topbar">
+                <div class="menu-logo">
+                  <a href="index.html">
+                      <img src="img/logo.png" alt="" height="90px">
+                  </a>
+                </div>
+                <div class="menu" id="topmenu"> 
+                  <h2 id="menu">
+                    <a href="index.html" class="menu">Home</a>
+                    <a href="index.html#aboutme" class="menu">About Me</a>
+                    <a class="active" href="Module.html" class="menu">What I'm Taking</a>
+                    <a href="Contact.html" class="menu">Contact</a>
+                    <a id="nav-toggle" href="#" onclick="menuFunction()">&#9776;</a>
+                    </a>
+                  </h2> 
+                </div>
+              </div> 
+            </nav>
+        </header>
+    
+        <div class="menuseparation">
+          <img src="img/MenuSeparator.jpg" class="menuseparation">
+        </div>
+    
+        <main lang="en">
+            <div class="container">
+              <div class="graphs">
+                <p>So below is my Canvas work. The prompt was "Data Visualisation" and we had to pick three activities and the time we spent on in the last week</p>
+                <canvas id="canvas_example" width="750" height="700"></canvas>
+                <script src="js/Canvas.js"></script>
+              </br>
+                <button onclick="barChart()" id="myBarchart" class="buttons">Bar Chart</button>
+                <button onclick="lineChart()" id="myBarchart" class="buttons">Line Graph</button>
+                <button onclick="pieChart()" id="myBarchart" class="buttons">Pie Chart</button>
+                <button onclick="changeColour(context,currentGraph)" id="myBarchart" class="buttons">Change Colour</button>
+              </div>
+              </br></br>
+                <a href="Module.html" class="link">< Back</a>
+            </div>
+        </main>
+    </body>
+</html>

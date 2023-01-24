@@ -1,0 +1,382 @@
+/* Global stuff */
+@import url(https://fonts.googleapis.com/css2?family=Oswald&family=Chakra+Petch:wght@500&family=Open+Sans+Condensed:wght@700&family=Quicksand&family=Sansita+Swashed&family=Josefin+Sans&family=Bitter:wght@600&display=swap);
+
+
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  padding:0;
+  margin:0;
+  background-color: black;
+  color:white;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+
+ /* landing */
+.landing{
+    padding:210px 0;
+    background-image: url("../img/homescreenbackground.jpg");
+    height:100%;
+    background-position: 50% 50%;
+    background-size: cover; 
+}
+
+/*topbar and nav menu */
+.topbar{
+    background-color:transparent;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 70px;
+}
+.menu {
+    background-color: transparent;
+    overflow: hidden;
+    float:right;
+    padding: 0 20px;
+    height: 100px;
+}
+
+.menu-logo{
+    float: left;
+    padding: 20px 45px;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.menu a {
+  float: left;
+  color: white;
+  text-align:center;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+/* Change the color of links on hover */
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.116);
+}
+
+/* Add a color to the active/current link */
+.menu a.active {
+    border-bottom: 5px solid;
+    border-bottom-color: #008cff;
+    color: white;
+}
+
+.menu .icon{
+  display:none;
+}
+
+.menu-logo:hover{
+  background-color: rgba(255, 255, 255, 0.024);
+}
+
+@media screen and (min-width: 1080px){ /*hide the bars when in desktop mode*/
+  .menu a#nav-toggle{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1080px) { /*displays the bars when in phone mode and arranges the other menu items into a drop-down list*/
+  .menu a:not(:first-child) {
+    display: none;
+  }
+  .menu a#nav-toggle {
+    float: left;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1080px) { /*Media query to control everything else on the page when viewed in phone mode*/
+  .menu.responsive {position: relative;}
+  .menu.responsive #nav-toggle {
+    position: absolute;
+    top: 10px;
+    right:10px;
+  }
+  .topbar{
+    padding-top: -2000px;
+  }
+  .menu {
+    background-color: transparent;
+    overflow: hidden;
+    float:right;
+    padding: 0;
+    height: 300%;
+  }
+  .menu.responsive a {
+    float: none;
+    display: grid;
+    text-align: center;
+    overflow: hidden;
+  }
+  .menu a.active{
+    background-color: #008cff;
+    color: white;
+  }
+  .topbar{
+    position: relative;
+  }
+  #title{
+    margin-top: -50px;
+  }
+  .landing{
+    background:url('../img/homescreenbackgroundphones.jpg');
+    height:auto;
+    background-size: cover;
+  }
+  .menuseparation{
+    display: none;
+  }
+    
+}
+
+/* Add a animation to the title */
+#title{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation-name: title;
+    animation-duration: 3s;
+  }
+  
+  @keyframes title {
+    0%   {opacity:0%; left:-200px; top:0;}
+    100% {opacity:100%; left:0; top:0;}
+  }
+
+    
+    
+/*Body*/
+.container{
+  width: 80%;
+  margin:auto;
+  overflow: hidden;
+  text-align: justify;
+}
+
+article img{
+  padding-top: 10px;
+  padding-left: 100px;
+  max-width: 40%;
+  height:auto;
+
+}
+
+.aboutme{
+  padding:10px 0 0 0;
+  border-top: solid 10px;
+  border-top-color: #008cff;
+}
+
+.aboutme img {
+  margin-top: -40px;
+  padding-top:-20px;
+  margin:20px ;
+  float: right;
+  width: 25%;
+  min-width: 250px;
+}
+
+.sectionheading{
+  margin-top: 20px;
+  padding-left: 10px ;
+  border-top: solid 10px;
+  border-top-color: #008cff;
+  text-align: left;
+}
+
+heading p{
+  color: rgb(255, 134, 134);
+
+}
+
+.container h1{
+  font-family: 'Oswald',sans-serif;
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+.container h2{
+  font-family: 'Josefin Sans';
+  font-size: 30px;
+  color:#ff9a02 ;
+  text-transform: uppercase;
+}
+
+h2 span{
+  padding-top: 10px;
+  border-top: 3px solid #1f67db;
+  line-height: 48px;
+}
+.container h3{
+  font-family: 'Josefin Sans';
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+
+.container h5{
+  font-size: 15px;
+  font-family: 'Sansita Swashed';
+}
+
+.container p{
+  font-family: 'Quicksand', sans-serif;;
+  font-size: 19px;
+}
+
+
+.menuseparation {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  padding-bottom: 0;
+}
+
+#boxes{
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-family:'Open Sans Condensed', sans-serif;
+}
+
+#boxes .box{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 15px;
+}
+
+#boxes .box img{
+  width: 55%;
+  min-width: 50%;
+}
+
+footer{
+  position: bottom;
+  padding:20px;
+  margin-top: 20px;
+  color: #808080;
+  background-color:rgb(27, 27, 27);
+  font-family:'Bitter',serif;
+  text-align: left;
+}
+
+footer a{
+  text-decoration: none;
+  float: right;
+  color: #919191;
+  padding-right:50px;
+  font-family: 'Oswald';
+  font-size: larger;
+  text-transform: uppercase;
+}
+
+
+form{
+  padding:50px;
+  padding-top:35px;
+  border-radius: 10px;
+  background-color: rgba(77, 77, 77, 0.144);
+  font-family: 'Chakra Petch';
+}
+
+label{
+  float:left;
+}
+
+input[type=text], input[type=email], select, textarea{
+  width: 100%;
+  resize: vertical; /*user can only resize the textbox vertically - w3Schools*/
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(95, 95, 95);
+  border-radius:5px;
+  padding:10px;
+  box-sizing: border-box; /* this is to make sure that the margin and padding stays in place. - W3Schools*/
+  font-family: 'Chakra Petch';
+}
+
+input[type=submit]{
+  background-color: #008cff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  width:100%;
+}
+
+input[type=submit]:hover{
+  background-color: #008cff81;
+  cursor: pointer;
+}
+
+.specialimages{
+  width:14.5%;
+  float: right;
+}
+
+.link{
+  text-decoration-line: underline;
+  font-family: 'Quicksand', sans-serif;;
+  font-size: 19px;
+  color:rgb(0, 116, 161);
+}
+
+article a{
+  text-decoration-line: underline;
+  color:rgb(0, 116, 161);
+}
+
+.quizlink{
+  font-family: 'Josefin Sans';
+  text-align: center;
+  color: #ff9a02e8;
+}
+
+.quizlink h3{
+  font-size: 23px;
+}
+
+.quizlink a{
+  text-decoration: none;
+}
+
+.quizlink button{
+  background-color: #008cff;
+  font-size: 20px;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  width:15%;
+  font-family: 'Oswald', sans-serif;
+}
+.quizlink button:hover{
+  background-color: #008cff81;
+  cursor: pointer;
+}
+
+.address{
+  text-align: right;
+  font-family: 'Chakra Petch';
+  font-size: 18px;
+  color:#d68a4c;
+}
+
+.warning{
+  text-align: center;
+  text-transform: uppercase;
+}
